@@ -1,154 +1,50 @@
-
 <!doctype html>
-<html lang="en">
+<html lang="en" style="background-color:#000000">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="light only">
-<meta name="supported-color-schemes" content="light only">
+<meta name="color-scheme" content="dark only">
+<meta name="supported-color-schemes" content="dark only">
 <title>Tradefluenza | Black Friday</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Montserrat:ital,wght@0,500;0,600;0,800;0,900;1,900&display=swap" rel="stylesheet">
 <style>
-  body{margin:0;background:#090909;color:#fff;font-family:Arial,Helvetica,sans-serif}
-  table{border-collapse:collapse}
-  a{text-decoration:none}
-  .page{width:100%;background:#090909;padding:28px 10px}
-  .frame{max-width:660px;width:100%;margin:auto;position:relative;padding:0 18px;box-sizing:border-box}
-  .frame-top,.frame-bottom{color:#fff;font-size:11px;line-height:1.4;font-weight:900;letter-spacing:2px;text-align:center;white-space:normal;word-spacing:8px;padding:9px 0;text-transform:uppercase}
-  .frame-sides{position:absolute;top:0;bottom:0;left:0;right:0;display:flex;justify-content:space-between;pointer-events:none;height:100%;box-sizing:border-box}
-  .frame-side{color:#fff;font-size:10px;line-height:1.2;font-weight:900;letter-spacing:2px;writing-mode:vertical-rl;text-orientation:mixed;text-transform:uppercase;white-space:nowrap;display:flex;align-items:center;justify-content:space-around;height:100%;overflow:hidden}
-  .frame-side.left{transform:rotate(180deg)}
-  .email{max-width:620px;width:100%;margin:auto;background:#0b0b0b;border:1px solid #343434}
-  .logo{width:134px;height:auto;display:block;margin:auto}
-  .redline{height:5px;background:#f12c2c}
-  .hero{padding:30px 34px 34px;text-align:center;background:radial-gradient(ellipse at 50% 30%,#351012 0%,#13090a 42%,#0b0b0b 76%)}
-  .kicker{font-size:10px;letter-spacing:3px;font-weight:800;color:#ff554f}
-  .headline{font-size:76px;line-height:.86;letter-spacing:-5px;font-weight:1000;margin:18px 0 0;color:#fff}
-  .headline span{display:block;color:#ffffff}
-  .sub{font-size:15px;line-height:1.6;color:#d0d0d0;margin:18px auto 0;max-width:440px}
-  .image-slot{margin:26px auto 0;max-width:510px;min-height:230px;border:1px dashed #e94a4a;background:repeating-linear-gradient(135deg,#171717,#171717 12px,#1d1112 12px,#1d1112 24px);display:flex;align-items:center;justify-content:center;padding:20px;box-sizing:border-box}
-  .image-slot strong{display:block;color:#fff;font-size:17px;letter-spacing:1px}
-  .image-slot small{display:block;color:#aaa;font-size:11px;line-height:1.6;margin-top:9px}
-  .offer{margin:26px auto 0;max-width:510px;border-top:2px solid #f12c2c;border-bottom:2px solid #f12c2c;padding:18px 8px}
-  .offer-label{font-size:11px;letter-spacing:3px;color:#fff;font-weight:800}
-  .offer-value{font-size:54px;line-height:1.1;font-weight:1000;letter-spacing:-2px;color:#eaff35;margin-top:5px}
-  .offer-note{font-size:12px;letter-spacing:2px;color:#ddd;font-weight:800;margin-top:5px}
-  .coupon{display:inline-block;margin-top:20px;padding:12px 20px;border:1px dashed #eaff35;color:#eaff35;font-weight:900;letter-spacing:2px;font-size:13px}
-  .cta{display:inline-block;margin-top:22px;background:#f12c2c;color:#fff!important;padding:17px 30px;font-size:14px;font-weight:900;letter-spacing:1px}
-  .section{padding:32px 30px}
-  .section-kicker{text-align:center;color:#f65b55;font-size:10px;letter-spacing:3px;font-weight:900}
-  .section-title{text-align:center;font-size:29px;line-height:1.1;font-weight:1000;margin:8px 0 8px}
-  .section-copy{text-align:center;color:#aaa;font-size:13px;line-height:1.6;margin:0 auto 22px;max-width:450px}
-  .firm{border:1px solid #3b3030;background:#141212;margin-top:10px;padding:17px 18px}
-  .firm table{width:100%}
-  .firmname{font-size:18px;font-weight:900;color:#fff}
-  .discount{font-size:21px;font-weight:1000;color:#eaff35;text-align:right;white-space:nowrap}
-  .firmmeta{font-size:9px;color:#ff6962;letter-spacing:2px;font-weight:800;margin-bottom:6px}
-  .firmbutton{display:inline-block;margin-top:13px;border-bottom:2px solid #f12c2c;padding-bottom:4px;color:#fff!important;font-size:11px;font-weight:900;letter-spacing:1px}
-  .more{margin:0 30px 30px;padding:26px 18px;text-align:center;background:#171010;border:1px solid #f12c2c}
-  .more h2{font-size:25px;line-height:1.1;margin:0;font-weight:1000}
-  .more p{font-size:13px;color:#bbb;line-height:1.6;margin:10px auto 0;max-width:420px}
-  .more .cta{background:#eaff35;color:#111!important}
-  .footer{border-top:1px solid #333;text-align:center;padding:25px 15px}
-  .footer img{width:145px;height:auto;margin:auto;display:block}
-  .footer p{font-size:10px;line-height:1.7;color:#777;margin:12px 0 0}
-  .footer a{color:#ff6b66;text-decoration:underline}
-  @media(max-width:480px){.page{padding:0}.frame{padding:0 13px}.frame-top,.frame-bottom{font-size:8px;letter-spacing:1px;word-spacing:2px;padding:7px 0}.frame-side{font-size:7px;letter-spacing:1px}.email{border-left:0;border-right:0}.hero{padding:25px 18px}.headline{font-size:60px}.offer-value{font-size:43px}.section{padding:27px 18px}.more{margin-left:18px;margin-right:18px}.firmname{font-size:15px}.discount{font-size:18px}}
-
-/* ===== Light theme (TFL brand rule: never dark) ===== */
-:root{color-scheme:light only}
-body{background:#FFF5F4;color:#0E0E10}
-.page{background:#FFF5F4}
-.frame-top,.frame-bottom,.frame-side{color:#0E0E10}
-.email{background:#FFFFFF;border-color:#F1DCD9}
-.logo{width:64px}
-.hero{background:radial-gradient(ellipse at 50% 30%,#FFE1DE 0%,#FFF3F1 42%,#FFFFFF 76%)}
-.headline{color:#0E0E10} .headline span{color:#f12c2c}
-.sub{color:#55585F}
-.image-slot{border-color:#e94a4a;background:repeating-linear-gradient(135deg,#FFF6F5,#FFF6F5 12px,#FFE9E7 12px,#FFE9E7 24px)}
-.image-slot strong{color:#0E0E10} .image-slot small{color:#777}
-.offer-label{color:#0E0E10} .offer-value{color:#f12c2c} .offer-note{color:#55585F}
-.coupon{border-color:#f12c2c;color:#f12c2c}
-.section-copy{color:#55585F}
-.firm{border-color:#F1DCD9;background:#FFFFFF}
-.firmname{color:#0E0E10} .discount{color:#f12c2c}
-.firmbutton{color:#0E0E10!important}
-.more{background:#FFF1EF;border-color:#f12c2c} .more p{color:#55585F}
-.footer{border-top-color:#F1DCD9} .footer img{width:52px} .footer p{color:#77777F} .footer a{color:#f12c2c}
+:root{color-scheme:dark only;supported-color-schemes:dark only}
+html,body{margin:0!important;padding:0!important;background-color:#000000!important}
+body{-webkit-text-size-adjust:100%} img{border:0;outline:none} a{text-decoration:none}
+.rv-live{display:none;max-height:0;overflow:hidden}
+#rvon-blackfriday:checked ~ .rv-live{display:block!important;max-height:none!important;overflow:visible!important}
+#rvon-blackfriday:checked ~ .rv-fb{display:none!important}
+#rv-blackfriday:checked ~ .rv-cover{display:none!important}
+#rv-blackfriday:checked ~ .rv-code{display:block!important;animation:pop .6s cubic-bezier(.2,1.5,.4,1) both}
+@keyframes pop{0%{transform:scale(.6);opacity:0}100%{transform:scale(1);opacity:1}}
+.pulse{animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,94,0,.55)}50%{box-shadow:0 0 0 12px rgba(255,94,0,0)}}
+.wig{animation:wig 2s ease-in-out infinite}
+@keyframes wig{0%,70%,100%{transform:rotate(0)}75%{transform:rotate(-8deg)}80%{transform:rotate(8deg)}85%{transform:rotate(-5deg)}90%{transform:rotate(4deg)}}
+.cf{position:absolute;top:10px;width:7px;height:12px;border-radius:2px;opacity:0}
+#rv-blackfriday:checked ~ .rv-code .cf{animation:cf 1.4s ease-out both}
+@keyframes cf{0%{opacity:1;transform:translateY(0) rotate(0)}100%{opacity:0;transform:translateY(-70px) rotate(360deg)}}
+.hov{transition:transform .2s} .hov:hover{transform:translateY(-2px)}
+.card:hover{border-color:#FF5E00!important}
+@media (max-width:599px){.wrap{width:100%!important} .px{padding-left:18px!important;padding-right:18px!important} .big{font-size:44px!important;line-height:50px!important}}
 </style>
 </head>
-<body>
-<table role="presentation" width="100%" class="page"><tr><td align="center">
-<div class="frame">
-<div class="frame-top">BLACK FRIDAY DEAL&nbsp;&nbsp; BLACK FRIDAY DEAL&nbsp;&nbsp; BLACK FRIDAY DEAL</div>
-<div class="frame-sides">
-  <div class="frame-side left">BLACK FRIDAY DEAL • BLACK FRIDAY DEAL • BLACK FRIDAY DEAL</div>
-  <div class="frame-side">BLACK FRIDAY DEAL • BLACK FRIDAY DEAL • BLACK FRIDAY DEAL</div>
-</div>
-<table role="presentation" width="620" class="email">
-
-<tr><td class="redline"></td></tr>
-<!-- OFFICIAL TRADEFLUENZA LOGO: GitHub hosted image -->
-<tr><td align="center" style="padding:25px 15px 15px;background:#FFFFFF">
-<a href="{{WEBSITE_URL}}"><img class="logo" src="https://cdn.jsdelivr.net/gh/Raj2246/tfl-email-assets@f4dbe6193826b1bdf5d0b80e6a4273c43192ba36/brand/tfl-sole-256.png" alt="Tradefluenza"></a>
-<div style="font-size:9px;letter-spacing:3px;color:#77777F;margin-top:12px;font-weight:bold">PROP FIRM DEALS • TRADING RESOURCES</div>
-</td></tr>
-
-<!-- HERO / CAMPAIGN -->
-<tr><td class="hero">
-<div class="kicker">THE BIGGEST DEAL EVENT OF THE YEAR</div>
-<div class="headline">BLACK<span>FRIDAY</span></div>
-<p class="sub">Your next prop firm deal deserves a closer look.<br>Explore special offers from participating firms.</p>
-
-<!-- IMAGE PLACEHOLDER: replace this entire block with an <img> tag or keep as a visual placeholder -->
-<div class="image-slot">
-<div>
-<strong>image url</strong>
-</div>
-</div>
-
-<div class="offer">
-<div class="offer-label">BLACK FRIDAY EXCLUSIVE</div>
-<div class="offer-value">__% OFF</div>
-<div class="offer-note">ELIGIBLE PROP FIRM CHALLENGES</div>
-</div>
-<div class="coupon">USE CODE: {PROMO_CODE}</div><br>
-<a class="cta" href="{{MAIN_DEALS_URL}}">UNLOCK THE BLACK FRIDAY DEALS&nbsp; →</a>
-<div style="font-size:10px;color:#888;margin-top:13px">Limited-time promotion. Terms and eligibility vary by firm.</div>
-</td></tr>
-
-<tr><td style="background:#f12c2c;color:#fff;text-align:center;padding:11px 8px;font-size:10px;letter-spacing:2px;font-weight:900">THE DEAL LINE-UP • FOUR FIRMS TO EXPLORE</td></tr>
-
-<tr><td class="section">
-<div class="section-kicker">YOUR BLACK FRIDAY SHORTLIST</div>
-<div class="section-title">FIND YOUR <span style="color:#f12c2c">PROP FIRM.</span></div>
-<p class="section-copy">Explore the featured offers. Compare challenge fees, rules and terms before choosing.</p>
-
-<div class="firm"><table role="presentation"><tr><td><div class="firmmeta">01 / FEATURED FIRM</div><div class="firmname">Blueberry Funded</div></td><td class="discount">__% OFF</td></tr></table><a class="firmbutton" href="{{BLUEBERRY_FUNDED_URL}}">VIEW BLUEBERRY FUNDED DEAL&nbsp; ↗</a></div>
-<div class="firm"><table role="presentation"><tr><td><div class="firmmeta">02 / FEATURED FIRM</div><div class="firmname">AquaFunded</div></td><td class="discount">__% OFF</td></tr></table><a class="firmbutton" href="{{AQUAFUNDED_URL}}">VIEW AQUAFUNDED DEAL&nbsp; ↗</a></div>
-<div class="firm"><table role="presentation"><tr><td><div class="firmmeta">03 / FEATURED FIRM</div><div class="firmname">Pipstone Capital</div></td><td class="discount">__% OFF</td></tr></table><a class="firmbutton" href="{{PIPSTONE_CAPITAL_URL}}">VIEW PIPSTONE CAPITAL DEAL&nbsp; ↗</a></div>
-<div class="firm"><table role="presentation"><tr><td><div class="firmmeta">04 / FEATURED FIRM</div><div class="firmname">Goat Funded Trader</div></td><td class="discount">__% OFF</td></tr></table><a class="firmbutton" href="{{GOAT_FUNDED_TRADER_URL}}">VIEW GOAT FUNDED TRADER DEAL&nbsp; ↗</a></div>
-</td></tr>
-
-<tr><td>
-<div class="more">
-<div style="font-size:10px;color:#ff625d;letter-spacing:3px;font-weight:900">STILL DEAL HUNTING?</div>
-<h2>MORE FIRMS.<br>MORE OPTIONS.</h2>
-<p>Explore the full Tradefluenza prop firm directory and compare more firms in one place.</p>
-<a class="cta" href="{{EXPLORE_MORE_URL}}">EXPLORE MORE PROP FIRMS&nbsp; →</a>
-</div>
-</td></tr>
-
-<tr><td class="footer">
-<a href="{{WEBSITE_URL}}"><img src="https://cdn.jsdelivr.net/gh/Raj2246/tfl-email-assets@f4dbe6193826b1bdf5d0b80e6a4273c43192ba36/brand/tfl-sole-256.png" alt="Tradefluenza"></a>
-<p>PROP FIRM DEALS • TRADING RESOURCES</p>
-<p>You are receiving this email because you subscribed to Tradefluenza updates.<br>
-<a href="{{UNSUBSCRIBE_URL}}">Unsubscribe</a> &nbsp;|&nbsp; <a href="{{WEBSITE_URL}}">Visit Tradefluenza</a></p>
-<p>© 2026 Tradefluenza. All rights reserved.</p>
-</td></tr>
-<tr><td class="redline"></td></tr>
+<body bgcolor="#000000" style="margin:0;padding:0;background-color:#000000">
+<div style="background-color:#000000;width:100%">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#000000" style="background-color:#000000"><tr><td align="center" bgcolor="#000000" style="background-color:#000000">
+<table role="presentation" class="wrap" width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#000000" style="width:600px;max-width:600px;background-color:#000000">
+<tr><td class="px" bgcolor="#000000" style="padding:26px 32px 18px;background-color:#000000"><a href="{{WEBSITE_URL}}"><img src="https://cdn.jsdelivr.net/gh/Raj2246/tfl-email-assets@f4dbe6193826b1bdf5d0b80e6a4273c43192ba36/brand/tfl-sole-256.png" width="56" alt="Tradefluenza" style="display:block;width:56px;height:auto;margin:0 auto;border:0"></a><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;line-height:14px;font-weight:800;color:#A8A8B0;letter-spacing:3px;text-align:center;padding-top:10px">PROP FIRM DEALS • TRADING RESOURCES</div></td></tr>
+<tr><td style="padding:0;font-size:0;line-height:0"><a href="{{MAIN_DEALS_URL}}"><img src="https://cdn.jsdelivr.net/gh/Raj2246/tfl-email-assets@66410e9d6297fd86c9efdd8e514a556675c47562/templates/seasonal-2026/blackfriday/hero.gif" width="600" alt="Black Friday prop firm deals from Tradefluenza" style="display:block;width:100%;max-width:600px;height:auto;border:0"></a></td></tr>
+<tr><td class="px" style="padding:26px 40px 0"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:900;color:#FF5E00;letter-spacing:3px;text-align:center">THE BIGGEST DEAL EVENT OF THE YEAR</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:25px;font-weight:500;color:#A8A8B0;text-align:center;padding-top:12px">Your next prop firm deal deserves a closer look. Explore special offers from participating firms.</div></td></tr>
+<tr><td class="px" style="padding:24px 32px 0"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="padding:22px 16px;border-top:3px solid #FF5E00;border-bottom:3px solid #FC0402;text-align:center"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:900;color:#FFFFFF;letter-spacing:3px">BLACK FRIDAY EXCLUSIVE</div><div class="big" style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:56px;line-height:62px;font-weight:900;color:#FF5E00;font-style:italic;letter-spacing:-1px;padding-top:6px">__% OFF</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:800;color:#A8A8B0;letter-spacing:2px;padding-top:4px">ELIGIBLE PROP FIRM CHALLENGES</div></td></tr></table></td></tr>
+<tr><td class="px" style="padding:22px 32px 0"><!--[if !mso]><!--><input type="checkbox" id="rvon-blackfriday" checked style="display:none;mso-hide:all"><!--<![endif]--><div class="rv-live" style="display:none;max-height:0;overflow:hidden;mso-hide:all"><!--[if !mso]><!--><input type="checkbox" id="rv-blackfriday" style="display:none;mso-hide:all"><!--<![endif]--><label for="rv-blackfriday" class="rv-cover" style="display:block;cursor:pointer;padding:22px 16px;border:2px dashed #FF5E00;border-radius:20px;background-color:#111113;text-align:center"><div class="wig" style="width:44px;height:34px;margin:0 auto 10px;border-radius:8px;background-color:#FF5E00;background-image:linear-gradient(90deg,#FF5E00,#FC0402);position:relative"><div style="position:absolute;left:12px;top:-16px;width:20px;height:20px;border:5px solid #FF5E00;border-bottom:0;border-radius:12px 12px 0 0"></div></div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;line-height:24px;font-weight:900;color:#FFFFFF;letter-spacing:2px;font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif">TAP TO UNLOCK YOUR CODE</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;line-height:18px;font-weight:600;color:#A8A8B0;;font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;padding-top:6px">One tap. Your Black Friday code appears.</div></label><div class="rv-code" style="display:none;position:relative;padding:20px 16px;border-radius:20px;border:2px solid #FF5E00;background-color:#1A1A1D;text-align:center"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:900;color:#FF5E00;letter-spacing:3px;font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif">YOUR BLACK FRIDAY CODE</div><div style="font-family:'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace;font-size:30px;line-height:40px;font-weight:700;color:#FFFFFF;letter-spacing:3px;padding-top:6px">{PROMO_CODE}</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;line-height:18px;font-weight:600;color:#A8A8B0;;padding-top:6px">Use it at checkout to get __% OFF.</div></div></div><div class="rv-fb" style="padding:20px 16px;border-radius:20px;border:2px dashed #FF5E00;background-color:#1A1A1D;text-align:center"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:900;color:#FF5E00;letter-spacing:3px">YOUR BLACK FRIDAY CODE</div><div style="font-family:'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace;font-size:30px;line-height:40px;font-weight:700;color:#FFFFFF;letter-spacing:3px;padding-top:6px">{PROMO_CODE}</div></div></td></tr>
+<tr><td class="px" style="padding:24px 32px 0"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" bgcolor="#FF5E00" class="pulse" style="background-color:#FF5E00;background-image:linear-gradient(90deg,#FF5E00,#FC0402);border-radius:999px"><a class="hov" href="{{MAIN_DEALS_URL}}" style="display:inline-block;padding:17px 34px;font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;line-height:20px;font-weight:900;color:#FFFFFF;letter-spacing:1px;text-decoration:none;border-radius:999px">UNLOCK THE BLACK FRIDAY DEALS&nbsp;&rarr;</a></td></tr></table><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;font-weight:600;color:#A8A8B0;letter-spacing:1px;text-align:center;padding-top:12px">Limited-time promotion. Terms and eligibility vary by firm.</div></td></tr>
+<tr><td bgcolor="#FC0402" style="background-color:#FF5E00;background-image:linear-gradient(90deg,#FF5E00,#FC0402);padding:12px 8px;text-align:center"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;line-height:14px;font-weight:900;color:#FFFFFF;letter-spacing:3px">THE DEAL LINE-UP • FOUR FIRMS TO EXPLORE</div></td></tr>
+<tr><td class="px" style="padding:30px 32px 0"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;font-weight:900;color:#FF5E00;letter-spacing:3px;text-align:center">YOUR BLACK FRIDAY SHORTLIST</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:30px;line-height:36px;font-weight:900;color:#FFFFFF;text-align:center;padding:6px 0 6px">FIND YOUR <span style="color:#FF5E00">PROP FIRM.</span></div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;line-height:21px;font-weight:500;color:#A8A8B0;text-align:center;padding-bottom:18px">Explore the featured offers. Compare challenge fees, rules and terms before choosing.</div><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="padding-bottom:10px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="card" style="border:1px solid #2A2A2F;border-radius:16px;background-color:#111113"><tr><td style="padding:16px 18px"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;line-height:14px;font-weight:900;color:#FF5E00;letter-spacing:2px">01 / FEATURED FIRM</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;line-height:24px;font-weight:900;color:#FFFFFF;;padding-top:4px">Blueberry Funded</div></td><td align="right" style="padding:16px 18px;font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:22px;line-height:26px;font-weight:900;color:#FF5E00;font-style:italic;white-space:nowrap">__% OFF</td></tr><tr><td colspan="2" style="padding:0 18px 16px"><a class="hov" href="{{BLUEBERRY_FUNDED_URL}}" style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:900;color:#FFFFFF;letter-spacing:1px;border-bottom:2px solid #FF5E00;padding-bottom:3px">VIEW BLUEBERRY FUNDED DEAL&nbsp;&#8599;</a></td></tr></table></td></tr><tr><td style="padding-bottom:10px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="card" style="border:1px solid #2A2A2F;border-radius:16px;background-color:#111113"><tr><td style="padding:16px 18px"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;line-height:14px;font-weight:900;color:#FF5E00;letter-spacing:2px">02 / FEATURED FIRM</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;line-height:24px;font-weight:900;color:#FFFFFF;;padding-top:4px">AquaFunded</div></td><td align="right" style="padding:16px 18px;font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:22px;line-height:26px;font-weight:900;color:#FF5E00;font-style:italic;white-space:nowrap">__% OFF</td></tr><tr><td colspan="2" style="padding:0 18px 16px"><a class="hov" href="{{AQUAFUNDED_URL}}" style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:900;color:#FFFFFF;letter-spacing:1px;border-bottom:2px solid #FF5E00;padding-bottom:3px">VIEW AQUAFUNDED DEAL&nbsp;&#8599;</a></td></tr></table></td></tr><tr><td style="padding-bottom:10px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="card" style="border:1px solid #2A2A2F;border-radius:16px;background-color:#111113"><tr><td style="padding:16px 18px"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;line-height:14px;font-weight:900;color:#FF5E00;letter-spacing:2px">03 / FEATURED FIRM</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;line-height:24px;font-weight:900;color:#FFFFFF;;padding-top:4px">Pipstone Capital</div></td><td align="right" style="padding:16px 18px;font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:22px;line-height:26px;font-weight:900;color:#FF5E00;font-style:italic;white-space:nowrap">__% OFF</td></tr><tr><td colspan="2" style="padding:0 18px 16px"><a class="hov" href="{{PIPSTONE_CAPITAL_URL}}" style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:900;color:#FFFFFF;letter-spacing:1px;border-bottom:2px solid #FF5E00;padding-bottom:3px">VIEW PIPSTONE CAPITAL DEAL&nbsp;&#8599;</a></td></tr></table></td></tr><tr><td style="padding-bottom:10px"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="card" style="border:1px solid #2A2A2F;border-radius:16px;background-color:#111113"><tr><td style="padding:16px 18px"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;line-height:14px;font-weight:900;color:#FF5E00;letter-spacing:2px">04 / FEATURED FIRM</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;line-height:24px;font-weight:900;color:#FFFFFF;;padding-top:4px">Goat Funded Trader</div></td><td align="right" style="padding:16px 18px;font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:22px;line-height:26px;font-weight:900;color:#FF5E00;font-style:italic;white-space:nowrap">__% OFF</td></tr><tr><td colspan="2" style="padding:0 18px 16px"><a class="hov" href="{{GOAT_FUNDED_TRADER_URL}}" style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:900;color:#FFFFFF;letter-spacing:1px;border-bottom:2px solid #FF5E00;padding-bottom:3px">VIEW GOAT FUNDED TRADER DEAL&nbsp;&#8599;</a></td></tr></table></td></tr></table></td></tr>
+<tr><td class="px" style="padding:20px 32px 0"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="padding:26px 18px;border:2px solid #FF5E00;border-radius:20px;background-color:#111113;text-align:center"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;font-weight:900;color:#FF5E00;letter-spacing:3px">STILL DEAL HUNTING?</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:26px;line-height:30px;font-weight:900;color:#FFFFFF;;padding-top:6px">MORE FIRMS. MORE OPTIONS.</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;line-height:21px;font-weight:500;color:#A8A8B0;;padding:10px 0 18px">Explore the full Tradefluenza prop firm directory and compare more firms in one place.</div><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" style="border:2px solid #FF5E00;border-radius:999px"><a class="hov" href="{{EXPLORE_MORE_URL}}" style="display:inline-block;padding:14px 28px;font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;line-height:18px;font-weight:900;color:#FF5E00;letter-spacing:1px;text-decoration:none">EXPLORE MORE PROP FIRMS&nbsp;&rarr;</a></td></tr></table></td></tr></table></td></tr>
+<tr><td class="px" style="padding:36px 32px 36px"><div style="height:1px;background-color:#2A2A2F;font-size:0;line-height:0">&nbsp;</div><img src="https://cdn.jsdelivr.net/gh/Raj2246/tfl-email-assets@f4dbe6193826b1bdf5d0b80e6a4273c43192ba36/brand/tfl-sole-256.png" width="40" alt="Tradefluenza" style="display:block;width:40px;height:auto;margin:22px auto 0;border:0"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;line-height:18px;font-weight:900;color:#FFFFFF;font-style:italic;text-align:center;padding-top:10px">Platform. Ecosystem. Community.</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;line-height:17px;font-weight:500;color:#A8A8B0;text-align:center;padding-top:12px">You are receiving this email because you subscribed to Tradefluenza updates.<br><a href="{{UNSUBSCRIBE_URL}}" style="color:#A8A8B0;text-decoration:underline">Unsubscribe</a> &nbsp;|&nbsp; <a href="{{WEBSITE_URL}}" style="color:#A8A8B0;text-decoration:underline">Visit Tradefluenza</a></div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;line-height:17px;font-weight:500;color:#A8A8B0;text-align:center;padding-top:6px">&copy; 2026 Tradefluenza. All rights reserved.</div></td></tr>
 </table>
-<div class="frame-bottom">BLACK FRIDAY DEAL&nbsp;&nbsp; BLACK FRIDAY DEAL&nbsp;&nbsp; BLACK FRIDAY DEAL</div>
-</div>
 </td></tr></table>
+</div>
 </body>
 </html>

@@ -1,153 +1,50 @@
-
 <!doctype html>
-<html lang="en">
+<html lang="en" style="background-color:#F6F6F8">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light only">
 <meta name="supported-color-schemes" content="light only">
 <title>Tradefluenza | Cyber Monday</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Montserrat:ital,wght@0,500;0,600;0,800;0,900;1,900&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box}
-body{margin:0;background:#08090d;color:#fff;font-family:Arial,Helvetica,sans-serif}
-a{text-decoration:none}
-.outer{padding:24px 12px;background:#08090d}
-.email{max-width:640px;width:100%;margin:auto;background:#101116;border:1px solid #34343d;overflow:hidden}
-.brandbar{height:5px;background:linear-gradient(90deg,#f02b35 0 45%,#ffc928 45% 70%,#26d9ff 70% 100%)}
-.header{padding:24px 30px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #34343d}
-.logo{height:2cm;
-    width:auto;
-    max-width:100%;
-    object-fit:contain;
-    display:block;}
-.header-tag{font-size:10px;font-weight:900;letter-spacing:2px;color:#ffc928;text-align:right}
-.hero{position:relative;text-align:center;padding:40px 26px 42px;overflow:hidden;background:radial-gradient(ellipse at 50% 38%,#252a3a 0%,#151821 43%,#101116 78%)}
-.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 0 47%,rgba(38,217,255,.07) 47.2% 47.6%,transparent 47.8%),linear-gradient(60deg,transparent 0 58%,rgba(240,43,53,.08) 58.2% 58.6%,transparent 58.8%);pointer-events:none}
-.kicker{position:relative;z-index:2;color:#ffc928;font-size:11px;font-weight:900;letter-spacing:4px}
-.hero-title{position:relative;z-index:2;margin:24px auto 0;font-weight:1000;text-transform:uppercase;line-height:.82;letter-spacing:-5px;font-size:clamp(56px,11vw,88px);color:#fff;text-shadow:0 0 24px rgba(38,217,255,.14)}
-.hero-title .monday{display:block;color:#f02b35;margin-top:8px}
-.offer-panel{position:relative;z-index:2;margin:27px auto 0;max-width:490px;padding:19px 14px 17px;border-top:1px solid #ffc928;border-bottom:1px solid #ffc928;background:rgba(8,9,13,.62)}
-.offer-label{color:#26d9ff;font-size:10px;font-weight:900;letter-spacing:3px}
-.offer-main{display:block;margin:10px 0 2px;color:#ffc928;font-size:clamp(34px,7vw,53px);font-weight:1000;line-height:1.08;letter-spacing:-1.8px;text-shadow:0 0 18px rgba(255,201,40,.16)}
-.offer-support{font-size:11px;color:#e6e6e9;letter-spacing:1.6px;font-weight:800;line-height:1.5}
-.hero-copy{position:relative;z-index:2;max-width:440px;margin:20px auto 0;color:#c9cbd2;font-size:13px;line-height:1.7}
-.cta{position:relative;z-index:2;display:inline-block;margin-top:23px;padding:16px 28px;background:#f02b35;color:#fff;font-size:12px;font-weight:900;letter-spacing:1.4px;border-bottom:3px solid #a9141e}
-.hero-foot{position:relative;z-index:2;margin-top:14px;color:#9296a3;font-size:10px;letter-spacing:1px}
-.cyber-strip{height:7px;background:repeating-linear-gradient(135deg,#26d9ff 0 8px,#101116 8px 16px)}
-.steps-intro{padding:38px 32px 18px;text-align:center}
-.section-kicker{font-size:10px;color:#26d9ff;font-weight:900;letter-spacing:3px}
-.steps-intro h2{font-size:30px;line-height:1.12;margin:11px 0 10px;color:#fff;letter-spacing:-.7px}
-.steps-intro p{max-width:460px;margin:0 auto;color:#b7bac4;font-size:13px;line-height:1.7}
-.steps{padding:8px 30px 35px}
-.step{display:flex;gap:18px;align-items:flex-start;padding:20px 0;border-bottom:1px solid #333640}
-.step:last-child{border-bottom:0}
-.step-no{flex:0 0 43px;width:43px;height:43px;display:flex;align-items:center;justify-content:center;background:#242936;border:1px solid #26d9ff;color:#26d9ff;font-size:16px;font-weight:1000;transform:skew(-7deg)}
-.step-body{flex:1}
-.step-title{font-size:16px;font-weight:900;color:#fff;margin:1px 0 6px}
-.step-copy{font-size:12px;line-height:1.7;color:#b7bac4;margin:0}
-.step-copy strong{color:#ffc928}
-.tip{margin:0 30px 30px;padding:17px 19px;background:#1b1d25;border-left:3px solid #ffc928;color:#c9cbd2;font-size:11px;line-height:1.7}
-.tip strong{color:#ffc928}
-.bottom-cta{padding:30px 24px;text-align:center;background:linear-gradient(120deg,#191b25,#11131a);border-top:1px solid #34343d}
-.bottom-cta h2{margin:0;color:#fff;font-size:23px;line-height:1.2}
-.bottom-cta p{margin:9px auto 0;max-width:420px;color:#b7bac4;font-size:12px;line-height:1.7}
-.bottom-cta a{display:inline-block;margin-top:18px;background:#ffc928;color:#111;padding:14px 23px;font-size:11px;font-weight:1000;letter-spacing:1px}
-.footer{padding:21px 18px;text-align:center;border-top:1px solid #34343d;color:#858995;font-size:10px;line-height:1.8}
-.footer a{color:#ffc928;text-decoration:underline}
-@media(max-width:480px){
-.outer{padding:0}.header{padding:19px 17px}.logo{width:145px}.header-tag{font-size:8px;letter-spacing:1.3px}
-.hero{padding:35px 17px 36px}.hero-title{letter-spacing:-3px}.offer-panel{padding:17px 9px}
-.steps-intro{padding:32px 20px 17px}.steps{padding:6px 20px 27px}.tip{margin-left:20px;margin-right:20px}
-}
-
-/* ===== Light theme (TFL brand rule: never dark) ===== */
-:root{color-scheme:light only}
-body{background:#F4F7FB;color:#0E0E10}
-.outer{background:#F4F7FB}
-.email{background:#FFFFFF;border-color:#E1E5EE}
-.header{border-bottom-color:#E1E5EE}
-.logo{height:56px}
-.header-tag{color:#A87400}
-.hero{background:radial-gradient(ellipse at 50% 38%,#E2F7FF 0%,#F2FAFF 43%,#FFFFFF 78%)}
-.kicker{color:#A87400}
-.hero-title{color:#0E0E10;text-shadow:none}
-.offer-panel{background:#FFFBEA}
-.offer-label{color:#0089B5} .offer-main{color:#0E0E10;text-shadow:none} .offer-support{color:#55585F}
-.hero-copy{color:#55585F} .hero-foot{color:#7A7E8A}
-.cyber-strip{background:repeating-linear-gradient(135deg,#26d9ff 0 8px,#FFFFFF 8px 16px)}
-.section-kicker{color:#0089B5} .steps-intro h2{color:#0E0E10} .steps-intro p{color:#5C606B}
-.step{border-bottom-color:#E8EAF0}
-.step-no{background:#E9F9FF;color:#0089B5}
-.step-title{color:#0E0E10} .step-copy{color:#5C606B} .step-copy strong{color:#A87400}
-.tip{background:#FFFBEA;color:#55585F} .tip strong{color:#A87400}
-.bottom-cta{background:linear-gradient(120deg,#EEF3FA,#FFFFFF);border-top-color:#E1E5EE}
-.bottom-cta h2{color:#0E0E10} .bottom-cta p{color:#5C606B}
-.footer{border-top-color:#E1E5EE;color:#80848F} .footer a{color:#f02b35}
+:root{color-scheme:light only;supported-color-schemes:light only}
+html,body{margin:0!important;padding:0!important;background-color:#F6F6F8!important}
+body{-webkit-text-size-adjust:100%} img{border:0;outline:none} a{text-decoration:none}
+.rv-live{display:none;max-height:0;overflow:hidden}
+#rvon-cybermonday:checked ~ .rv-live{display:block!important;max-height:none!important;overflow:visible!important}
+#rvon-cybermonday:checked ~ .rv-fb{display:none!important}
+#rv-cybermonday:checked ~ .rv-cover{display:none!important}
+#rv-cybermonday:checked ~ .rv-code{display:block!important;animation:pop .6s cubic-bezier(.2,1.5,.4,1) both}
+@keyframes pop{0%{transform:scale(.6);opacity:0}100%{transform:scale(1);opacity:1}}
+.pulse{animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,94,0,.55)}50%{box-shadow:0 0 0 12px rgba(255,94,0,0)}}
+.wig{animation:wig 2s ease-in-out infinite}
+@keyframes wig{0%,70%,100%{transform:rotate(0)}75%{transform:rotate(-8deg)}80%{transform:rotate(8deg)}85%{transform:rotate(-5deg)}90%{transform:rotate(4deg)}}
+.cf{position:absolute;top:10px;width:7px;height:12px;border-radius:2px;opacity:0}
+#rv-cybermonday:checked ~ .rv-code .cf{animation:cf 1.4s ease-out both}
+@keyframes cf{0%{opacity:1;transform:translateY(0) rotate(0)}100%{opacity:0;transform:translateY(-70px) rotate(360deg)}}
+.hov{transition:transform .2s} .hov:hover{transform:translateY(-2px)}
+.card:hover{border-color:#FF5E00!important}
+@media (max-width:599px){.wrap{width:100%!important} .px{padding-left:18px!important;padding-right:18px!important} .big{font-size:44px!important;line-height:50px!important}}
 </style>
 </head>
-<body>
-<div class="outer"><main class="email">
-<div class="brandbar"></div>
-<header class="header">
-<img class="logo" src="https://cdn.jsdelivr.net/gh/Raj2246/tfl-email-assets@f4dbe6193826b1bdf5d0b80e6a4273c43192ba36/brand/tfl-sole-256.png" alt="Tradefluenza">
-<div class="header-tag">CYBER MONDAY DEAL</div>
-</header>
-
-<section class="hero">
-<div class="kicker">THE MARKET'S MOVING. DON'T MISS THE DROP.</div>
-<h1 class="hero-title">CYBER<span class="monday">MONDAY</span></h1>
-<div class="offer-panel">
-<div class="offer-label">TRADEFLUENZA EXCLUSIVE OFFER</div>
-<strong class="offer-main">UP TO __% OFF</strong>
-<div class="offer-support">YOUR NEXT TRADING MOVE STARTS HERE</div>
+<body bgcolor="#F6F6F8" style="margin:0;padding:0;background-color:#F6F6F8">
+<div style="background-color:#F6F6F8;width:100%">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#F6F6F8" style="background-color:#F6F6F8"><tr><td align="center" bgcolor="#F6F6F8" style="background-color:#F6F6F8">
+<table role="presentation" class="wrap" width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#F6F6F8" style="width:600px;max-width:600px;background-color:#F6F6F8">
+<tr><td class="px" bgcolor="#F6F6F8" style="padding:26px 32px 18px;background-color:#F6F6F8"><a href="{{WEBSITE_URL}}"><img src="https://cdn.jsdelivr.net/gh/Raj2246/tfl-email-assets@f4dbe6193826b1bdf5d0b80e6a4273c43192ba36/brand/tfl-sole-256.png" width="56" alt="Tradefluenza" style="display:block;width:56px;height:auto;margin:0 auto;border:0"></a><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;line-height:14px;font-weight:800;color:#5C5C66;letter-spacing:3px;text-align:center;padding-top:10px">CYBER MONDAY DEAL</div></td></tr>
+<tr><td style="padding:0;font-size:0;line-height:0"><a href="{{CAMPAIGN_URL}}"><img src="https://cdn.jsdelivr.net/gh/Raj2246/tfl-email-assets@66410e9d6297fd86c9efdd8e514a556675c47562/templates/seasonal-2026/cybermonday/hero.gif" width="600" alt="Cyber Monday deal drop from Tradefluenza" style="display:block;width:100%;max-width:600px;height:auto;border:0"></a></td></tr>
+<tr><td class="px" style="padding:26px 40px 0"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:900;color:#FF5E00;letter-spacing:3px;text-align:center">THE MARKET'S MOVING. DON'T MISS THE DROP.</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:25px;font-weight:500;color:#5C5C66;text-align:center;padding-top:12px">A limited-time Cyber Monday opportunity to level up your trading journey. Follow the steps below and make the most of the offers.</div></td></tr>
+<tr><td class="px" style="padding:24px 32px 0"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="padding:22px 16px;border-top:3px solid #FF5E00;border-bottom:3px solid #FC0402;text-align:center"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:900;color:#0E0E10;letter-spacing:3px">TRADEFLUENZA EXCLUSIVE OFFER</div><div class="big" style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:56px;line-height:62px;font-weight:900;color:#FF5E00;font-style:italic;letter-spacing:-1px;padding-top:6px">UP TO __% OFF</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:800;color:#5C5C66;letter-spacing:2px;padding-top:4px">YOUR NEXT TRADING MOVE STARTS HERE</div></td></tr></table></td></tr>
+<tr><td class="px" style="padding:22px 32px 0"><!--[if !mso]><!--><input type="checkbox" id="rvon-cybermonday" checked style="display:none;mso-hide:all"><!--<![endif]--><div class="rv-live" style="display:none;max-height:0;overflow:hidden;mso-hide:all"><!--[if !mso]><!--><input type="checkbox" id="rv-cybermonday" style="display:none;mso-hide:all"><!--<![endif]--><label for="rv-cybermonday" class="rv-cover" style="display:block;cursor:pointer;padding:22px 16px;border:2px dashed #FF5E00;border-radius:20px;background-color:#0E0E10;text-align:center"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:700;color:#FF5E00;letter-spacing:2px;font-family:'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace;padding-bottom:8px">SYS://SECURE_CODE</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;line-height:24px;font-weight:900;color:#FFFFFF;letter-spacing:2px;font-family:'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">&gt; TAP TO DECRYPT YOUR CODE</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;line-height:18px;font-weight:600;color:#A8A8B0;;font-family:'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace;padding-top:6px">ENCRYPTED: ████████████</div></label><div class="rv-code" style="display:none;position:relative;padding:20px 16px;border-radius:20px;border:2px solid #FF5E00;background-color:#FFF3EA;text-align:center"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:900;color:#FF5E00;letter-spacing:3px;font-family:'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">DECRYPTED // CODE</div><div style="font-family:'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace;font-size:30px;line-height:40px;font-weight:700;color:#0E0E10;letter-spacing:3px;padding-top:6px">{{PROMO_CODE}}</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;line-height:18px;font-weight:600;color:#5C5C66;;padding-top:6px">Use it at checkout to get up to __% OFF.</div></div></div><div class="rv-fb" style="padding:20px 16px;border-radius:20px;border:2px dashed #FF5E00;background-color:#FFF3EA;text-align:center"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:900;color:#FF5E00;letter-spacing:3px">DECRYPTED // CODE</div><div style="font-family:'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace;font-size:30px;line-height:40px;font-weight:700;color:#0E0E10;letter-spacing:3px;padding-top:6px">{{PROMO_CODE}}</div></div></td></tr>
+<tr><td class="px" style="padding:24px 32px 0"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" bgcolor="#FF5E00" class="pulse" style="background-color:#FF5E00;background-image:linear-gradient(90deg,#FF5E00,#FC0402);border-radius:999px"><a class="hov" href="{{CAMPAIGN_URL}}" style="display:inline-block;padding:17px 34px;font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;line-height:20px;font-weight:900;color:#FFFFFF;letter-spacing:1px;text-decoration:none;border-radius:999px">UNLOCK YOUR CYBER MONDAY OFFER&nbsp;&rarr;</a></td></tr></table><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;font-weight:600;color:#5C5C66;letter-spacing:1px;text-align:center;padding-top:12px">LIMITED-TIME EVENT • TERMS MAY APPLY</div></td></tr>
+<tr><td class="px" style="padding:36px 32px 0"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;font-weight:900;color:#FF5E00;letter-spacing:3px;text-align:center">YOUR 4-STEP GAME PLAN</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:28px;line-height:34px;font-weight:900;color:#0E0E10;text-align:center;padding-top:6px">From Deal Drop to Trade Ready.</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;line-height:21px;font-weight:500;color:#5C5C66;text-align:center;padding:6px 0 8px">Keep it simple. Here's how to make the most of the Tradefluenza Cyber Monday event.</div><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="56" valign="top" style="width:56px;padding:16px 0;border-bottom:1px solid #E5E5EA"><div style="width:44px;height:44px;border:2px solid #FF5E00;border-radius:8px;font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:40px;font-weight:900;color:#FF5E00;text-align:center;font-family:'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">01</div></td><td valign="top" style="padding:16px 0 16px 6px;border-bottom:1px solid #E5E5EA"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:22px;font-weight:900;color:#0E0E10;">Explore the Cyber Monday Offer</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;line-height:20px;font-weight:500;color:#5C5C66;;padding-top:4px">Start with the featured campaign and review the available offer details, eligible products and promotion terms.</div></td></tr><tr><td width="56" valign="top" style="width:56px;padding:16px 0;border-bottom:1px solid #E5E5EA"><div style="width:44px;height:44px;border:2px solid #FF5E00;border-radius:8px;font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:40px;font-weight:900;color:#FF5E00;text-align:center;font-family:'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">02</div></td><td valign="top" style="padding:16px 0 16px 6px;border-bottom:1px solid #E5E5EA"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:22px;font-weight:900;color:#0E0E10;">Choose Your Trading Path</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;line-height:20px;font-weight:500;color:#5C5C66;;padding-top:4px">Compare the available options against your trading goals, experience and preferred trading conditions. Take a moment to read the rules before deciding.</div></td></tr><tr><td width="56" valign="top" style="width:56px;padding:16px 0;border-bottom:1px solid #E5E5EA"><div style="width:44px;height:44px;border:2px solid #FF5E00;border-radius:8px;font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:40px;font-weight:900;color:#FF5E00;text-align:center;font-family:'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">03</div></td><td valign="top" style="padding:16px 0 16px 6px;border-bottom:1px solid #E5E5EA"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:22px;font-weight:900;color:#0E0E10;">Apply the Promo Code</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;line-height:20px;font-weight:500;color:#5C5C66;;padding-top:4px">At checkout, enter <b style="color:#FF5E00">{{PROMO_CODE}}</b> if a code is required, and confirm that the discount appears before completing your purchase.</div></td></tr><tr><td width="56" valign="top" style="width:56px;padding:16px 0;border-bottom:1px solid #E5E5EA"><div style="width:44px;height:44px;border:2px solid #FF5E00;border-radius:8px;font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:40px;font-weight:900;color:#FF5E00;text-align:center;font-family:'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace">04</div></td><td valign="top" style="padding:16px 0 16px 6px;border-bottom:1px solid #E5E5EA"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:22px;font-weight:900;color:#0E0E10;">Get Set for Your Next Move</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;line-height:20px;font-weight:500;color:#5C5C66;;padding-top:4px">Review the account rules and next steps, prepare your trading plan, and approach the challenge with discipline.</div></td></tr></table></td></tr>
+<tr><td class="px" style="padding:22px 32px 0"><div style="padding:16px 18px;border-left:4px solid #FF5E00;border-radius:0 12px 12px 0;background-color:#FFF3EA;font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;line-height:20px;font-weight:500;color:#0E0E10;"><b style="color:#FF5E00">TRADER TIP:</b> A discount is only one part of the decision. Check the rules, fees, drawdown limits and terms carefully so the offer fits your trading approach.</div></td></tr>
+<tr><td class="px" style="padding:24px 32px 0"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="padding:28px 18px;border-radius:20px;background-color:#FFFFFF;border:1px solid #E5E5EA;text-align:center"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:24px;line-height:30px;font-weight:900;color:#0E0E10;">Ready to Make Your Move?</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;line-height:21px;font-weight:500;color:#5C5C66;;padding:10px 0 18px">Step into the Cyber Monday event and explore what's available through Tradefluenza.</div><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" bgcolor="#FF5E00" class="" style="background-color:#FF5E00;background-image:linear-gradient(90deg,#FF5E00,#FC0402);border-radius:999px"><a class="hov" href="{{CAMPAIGN_URL}}" style="display:inline-block;padding:17px 34px;font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;line-height:20px;font-weight:900;color:#FFFFFF;letter-spacing:1px;text-decoration:none;border-radius:999px">EXPLORE THE CYBER MONDAY EVENT&nbsp;&rarr;</a></td></tr></table></td></tr></table></td></tr>
+<tr><td class="px" style="padding:36px 32px 36px"><div style="height:1px;background-color:#E5E5EA;font-size:0;line-height:0">&nbsp;</div><img src="https://cdn.jsdelivr.net/gh/Raj2246/tfl-email-assets@f4dbe6193826b1bdf5d0b80e6a4273c43192ba36/brand/tfl-sole-256.png" width="40" alt="Tradefluenza" style="display:block;width:40px;height:auto;margin:22px auto 0;border:0"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;line-height:18px;font-weight:900;color:#0E0E10;font-style:italic;text-align:center;padding-top:10px">Platform. Ecosystem. Community.</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;line-height:17px;font-weight:500;color:#5C5C66;text-align:center;padding-top:12px">You are receiving this email because you subscribed to Tradefluenza updates.<br><a href="{{UNSUBSCRIBE_URL}}" style="color:#5C5C66;text-decoration:underline">Unsubscribe</a> &nbsp;|&nbsp; <a href="{{WEBSITE_URL}}" style="color:#5C5C66;text-decoration:underline">Visit Tradefluenza</a></div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;line-height:17px;font-weight:500;color:#5C5C66;text-align:center;padding-top:6px">&copy; 2026 Tradefluenza. All rights reserved.</div></td></tr>
+</table>
+</td></tr></table>
 </div>
-<p class="hero-copy">A limited-time Cyber Monday opportunity to level up your trading journey. Follow the steps below and make the most of the offers.</p>
-<a class="cta" href="{{CAMPAIGN_URL}}">UNLOCK YOUR CYBER MONDAY OFFER&nbsp; →</a>
-<div class="hero-foot">LIMITED-TIME EVENT&nbsp; • &nbsp;TERMS MAY APPLY</div>
-</section>
-
-<div class="cyber-strip"></div>
-
-<section class="steps-intro">
-<div class="section-kicker">YOUR 4-STEP GAME PLAN</div>
-<h2>From Deal Drop to Trade Ready.</h2>
-<p>Keep it simple. Here's how to make the most of the Tradefluenza Cyber Monday event.</p>
-</section>
-
-<section class="steps">
-<div class="step">
-<div class="step-no">01</div>
-<div class="step-body"><div class="step-title">Explore the Cyber Monday Offer</div><p class="step-copy">Start with the featured campaign and review the available offer details, eligible products and promotion terms.</p></div>
-</div>
-<div class="step">
-<div class="step-no">02</div>
-<div class="step-body"><div class="step-title">Choose Your Trading Path</div><p class="step-copy">Compare the available options against your trading goals, experience and preferred trading conditions. Take a moment to read the rules before deciding.</p></div>
-</div>
-<div class="step">
-<div class="step-no">03</div>
-<div class="step-body"><div class="step-title">Apply the Promo Code</div><p class="step-copy">At checkout, enter <strong>{{PROMO_CODE}}</strong> if a code is required, and confirm that the discount appears before completing your purchase.</p></div>
-</div>
-<div class="step">
-<div class="step-no">04</div>
-<div class="step-body"><div class="step-title">Get Set for Your Next Move</div><p class="step-copy">Review the account rules and next steps, prepare your trading plan, and approach the challenge with discipline.</p></div>
-</div>
-</section>
-
-<div class="tip"><strong>TRADER TIP:</strong> A discount is only one part of the decision. Check the rules, fees, drawdown limits and terms carefully so the offer fits your trading approach.</div>
-
-<section class="bottom-cta">
-<h2>Ready to Make Your Move?</h2>
-<p>Step into the Cyber Monday event and explore what's available through Tradefluenza.</p>
-<a href="{{CAMPAIGN_URL}}">EXPLORE THE CYBER MONDAY EVENT&nbsp; →</a>
-</section>
-
-<footer class="footer">
-<a href="{{WEBSITE_URL}}"><img class="logo" src="https://cdn.jsdelivr.net/gh/Raj2246/tfl-email-assets@f4dbe6193826b1bdf5d0b80e6a4273c43192ba36/brand/tfl-sole-256.png" alt="Tradefluenza"></a>
-<p>PROP FIRM DEALS • TRADING RESOURCES</p>
-<p>You are receiving this email because you subscribed to Tradefluenza updates.<br>
-<a href="{{UNSUBSCRIBE_URL}}">Unsubscribe</a> &nbsp;|&nbsp; <a href="{{WEBSITE_URL}}">Visit Tradefluenza</a></p>
-<p>© 2026 Tradefluenza. All rights reserved.</p>
-</footer>
-</main></div>
 </body>
 </html>

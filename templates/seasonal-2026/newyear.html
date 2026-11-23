@@ -1,197 +1,50 @@
-
 <!doctype html>
-<html lang="en">
+<html lang="en" style="background-color:#FFF7F1">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light only">
 <meta name="supported-color-schemes" content="light only">
 <title>Tradefluenza | New Year Celebration</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&family=Montserrat:ital,wght@0,500;0,600;0,800;0,900;1,900&display=swap" rel="stylesheet">
 <style>
-*{box-sizing:border-box}
-body{margin:0;background:#080b14;color:#fff;font-family:Arial,Helvetica,sans-serif}
-a{text-decoration:none}
-.outer{padding:22px 12px;background:#080b14}
-.email{max-width:640px;margin:auto;background:#101522;border:1px solid #38415c;overflow:hidden}
-.brandbar{height:5px;background:linear-gradient(90deg,#f02b35 0 34%,#ffc928 34% 67%,#26d9ff 67%)}
-.header{padding:22px 28px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #38415c}
-.logo{
-  height:3cm;
-  width:auto;
-  max-width:100%;
-  object-fit:contain;
-}
-.header-tag{font-size:10px;font-weight:900;letter-spacing:2px;color:#ffc928;text-align:right}
-.hero{position:relative;overflow:hidden;text-align:center;padding:40px 24px 43px;background:radial-gradient(ellipse at 50% 40%,#26365b 0%,#17213c 43%,#101522 82%)}
-.hero:before{content:"";position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 0%,rgba(255,201,40,.08) 0deg 1deg,transparent 1deg 8deg);opacity:.7}
-.spark{position:absolute;color:#ffc928;text-shadow:0 0 12px currentColor;font-size:18px;animation:none}
-.s1{top:12%;left:9%;color:#26d9ff}
-.s2{top:18%;right:12%;font-size:25px}
-.s3{top:40%;left:5%;color:#f02b35}
-.s4{top:52%;right:7%;font-size:24px}
-.s5{bottom:20%;left:18%;color:#26d9ff}
-.s6{bottom:18%;right:20%;color:#f02b35}
-.confetti{position:absolute;inset:0;pointer-events:none;opacity:.75;background-image:radial-gradient(circle,#ffc928 1.5px,transparent 2px),radial-gradient(circle,#26d9ff 1.5px,transparent 2px),radial-gradient(circle,#f02b35 1.5px,transparent 2px);background-size:71px 83px,97px 113px,131px 101px;background-position:8px 12px,37px 29px,61px 7px}
-.kicker{position:relative;z-index:2;color:#26d9ff;font-size:11px;font-weight:900;letter-spacing:4px}
-h1{position:relative;z-index:2;margin:35px auto 0;font-size:clamp(54px,11vw,88px);font-weight:1000;line-height:.82;letter-spacing:-5px;color:#fff;text-shadow:0 0 24px rgba(38,217,255,.2)}
-h1 span{display:block;color:#ffc928;margin-top:10px}
-.offer{position:relative;z-index:2;max-width:470px;margin:30px auto 0;padding:19px 15px 17px;border:1px solid #ffc928;background:rgba(8,11,20,.72);box-shadow:0 0 24px rgba(255,201,40,.12)}
-.offer small{display:block;color:#26d9ff;font-size:10px;letter-spacing:3px;font-weight:900}
-.offer strong{display:block;color:#ffc928;font-size:clamp(34px,7vw,52px);line-height:1.1;margin-top:8px;letter-spacing:-1px}
-.copy{position:relative;z-index:2;max-width:440px;margin:22px auto 0;color:#d5dbea;font-size:13px;line-height:1.75}
-.cta{position:relative;z-index:2;display:inline-block;margin-top:23px;padding:15px 28px;background:#f02b35;color:#fff;font-size:12px;font-weight:900;letter-spacing:1.3px;border-bottom:3px solid #a9141e}
-.note{position:relative;z-index:2;margin-top:14px;color:#aebbd2;font-size:10px;letter-spacing:1.5px}
-.divider{height:8px;background:repeating-linear-gradient(135deg,#26d9ff 0 8px,#ffc928 8px 16px,#f02b35 16px 24px,#101522 24px 32px)}
-.intro{text-align:center;padding:36px 28px 15px}
-.eyebrow{font-size:10px;color:#26d9ff;font-weight:900;letter-spacing:3px}
-.intro h2{font-family:Georgia,serif;font-size:29px;font-weight:400;margin:10px 0;color:#fff}
-.intro p{font-size:13px;line-height:1.7;color:#c3cde0;max-width:460px;margin:auto}
-.steps{padding:8px 30px 28px}
-.step{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid #38415c}
-.step:last-child{border:0}
-.num{flex:0 0 42px;height:42px;display:flex;align-items:center;justify-content:center;background:#1c2c4a;border:1px solid #26d9ff;color:#26d9ff;font-weight:1000;transform:rotate(45deg)}
-.num span{transform:rotate(-45deg)}
-.step h3{font-size:15px;margin:2px 0 6px}
-.step p{font-size:12px;line-height:1.7;color:#c3cde0;margin:0}
-.step strong{color:#ffc928}
-.tip{margin:0 30px 28px;padding:17px 19px;background:#1a2540;border-left:3px solid #ffc928;color:#d5dbea;font-size:11px;line-height:1.7}
-.tip b{color:#ffc928}
-.bottom{text-align:center;padding:30px 24px;background:linear-gradient(135deg,#192747,#171c30);border-top:1px solid #38415c}
-.bottom h2{font-family:Georgia,serif;font-size:26px;font-weight:400;color:#ffc928;margin:0}
-.bottom p{font-size:12px;line-height:1.7;color:#c3cde0;max-width:420px;margin:10px auto 0}
-.bottom a{display:inline-block;margin-top:18px;background:#ffc928;color:#111827;padding:14px 23px;font-size:11px;font-weight:1000;letter-spacing:1px}
-.footer{text-align:center;padding:21px 18px;border-top:1px solid #38415c;color:#8995aa;font-size:10px;line-height:1.8}
-.footer a{color:#ffc928;text-decoration:underline}
-@media(max-width:480px){
-.outer{padding:0}
-.header{padding:18px 16px}
-.logo{width:145px}
-.header-tag{font-size:8px}
-.hero{padding:36px 16px 35px}
-h1{letter-spacing:-3px}
-.steps{padding:6px 20px 24px}
-.intro{padding:30px 20px 14px}
-.tip{margin:0 20px 24px}
-}
-
-/* ===== Light theme (TFL brand rule: never dark) ===== */
-:root{color-scheme:light only}
-body{background:#F4F6FC;color:#0E0E10}
-.outer{background:#F4F6FC}
-.email{background:#FFFFFF;border-color:#E0E5F2}
-.header{border-bottom-color:#E0E5F2}
-.logo{height:56px}
-.header-tag{color:#A87400}
-.hero{background:radial-gradient(ellipse at 50% 40%,#E2EBFF 0%,#F0F4FF 43%,#FFFFFF 82%)}
-.kicker{color:#0089B5}
-h1{color:#0E0E10;text-shadow:none} h1 span{color:#C08A12}
-.offer{background:#FFFBEA;box-shadow:0 0 24px rgba(255,201,40,.18)}
-.offer small{color:#0089B5} .offer strong{color:#0E0E10}
-.copy{color:#4A5266} .note{color:#7A8297}
-.divider{background:repeating-linear-gradient(135deg,#26d9ff 0 8px,#ffc928 8px 16px,#f02b35 16px 24px,#FFFFFF 24px 32px)}
-.eyebrow{color:#0089B5} .intro h2{color:#0E0E10} .intro p{color:#5A6276}
-.step{border-bottom-color:#E5E9F3}
-.num{background:#E9F9FF;color:#0089B5}
-.step p{color:#5A6276} .step strong{color:#A87400}
-.tip{background:#F4F7FF;color:#4A5266} .tip b{color:#A87400}
-.bottom{background:linear-gradient(135deg,#EAF0FF,#FFFFFF);border-top-color:#E0E5F2}
-.bottom h2{color:#1C2C4A} .bottom p{color:#5A6276}
-.footer{border-top-color:#E0E5F2;color:#7E8699} .footer a{color:#f02b35}
+:root{color-scheme:light only;supported-color-schemes:light only}
+html,body{margin:0!important;padding:0!important;background-color:#FFF7F1!important}
+body{-webkit-text-size-adjust:100%} img{border:0;outline:none} a{text-decoration:none}
+.rv-live{display:none;max-height:0;overflow:hidden}
+#rvon-newyear:checked ~ .rv-live{display:block!important;max-height:none!important;overflow:visible!important}
+#rvon-newyear:checked ~ .rv-fb{display:none!important}
+#rv-newyear:checked ~ .rv-cover{display:none!important}
+#rv-newyear:checked ~ .rv-code{display:block!important;animation:pop .6s cubic-bezier(.2,1.5,.4,1) both}
+@keyframes pop{0%{transform:scale(.6);opacity:0}100%{transform:scale(1);opacity:1}}
+.pulse{animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,94,0,.55)}50%{box-shadow:0 0 0 12px rgba(255,94,0,0)}}
+.wig{animation:wig 2s ease-in-out infinite}
+@keyframes wig{0%,70%,100%{transform:rotate(0)}75%{transform:rotate(-8deg)}80%{transform:rotate(8deg)}85%{transform:rotate(-5deg)}90%{transform:rotate(4deg)}}
+.cf{position:absolute;top:10px;width:7px;height:12px;border-radius:2px;opacity:0}
+#rv-newyear:checked ~ .rv-code .cf{animation:cf 1.4s ease-out both}
+@keyframes cf{0%{opacity:1;transform:translateY(0) rotate(0)}100%{opacity:0;transform:translateY(-70px) rotate(360deg)}}
+.hov{transition:transform .2s} .hov:hover{transform:translateY(-2px)}
+.card:hover{border-color:#FF5E00!important}
+@media (max-width:599px){.wrap{width:100%!important} .px{padding-left:18px!important;padding-right:18px!important} .big{font-size:44px!important;line-height:50px!important}}
 </style>
 </head>
-<body>
-<div class="outer">
-<main class="email">
-
-<div class="brandbar"></div>
-
-<header class="header">
-<img class="logo" src="https://cdn.jsdelivr.net/gh/Raj2246/tfl-email-assets@f4dbe6193826b1bdf5d0b80e6a4273c43192ba36/brand/tfl-sole-256.png" alt="Tradefluenza">
-<div class="header-tag">NEW YEAR. NEW GOALS.<br>NEW POSSIBILITIES.</div>
-</header>
-
-<section class="hero">
-<div class="confetti"></div>
-<span class="spark s1">✦</span>
-<span class="spark s2">✧</span>
-<span class="spark s3">✦</span>
-<span class="spark s4">✧</span>
-<span class="spark s5">✦</span>
-<span class="spark s6">✧</span>
-
-<div class="kicker">COUNTDOWN TO YOUR NEXT BIG MOVE</div>
-<h1>HAPPY<span>NEW YEAR</span></h1>
-
-<div class="offer">
-<small>START THE YEAR WITH A TRADEFLUENZA BONUS</small>
-<strong>UP TO __% OFF</strong>
-</div>
-
-<p class="copy">A fresh year brings fresh goals. Celebrate the New Year with a special Tradefluenza offer and take your next step with purpose.</p>
-
-<a class="cta" href="{{CAMPAIGN_URL}}">CLAIM YOUR NEW YEAR OFFER&nbsp; →</a>
-<div class="note">A NEW YEAR SPECIAL • LIMITED TIME</div>
-</section>
-
-<div class="divider"></div>
-
-<section class="intro">
-<div class="eyebrow">YOUR FIRST MOVES OF THE YEAR</div>
-<h2>Make This Year Count</h2>
-<p>Four simple steps to make the most of the New Year offer and start with a clear plan.</p>
-</section>
-
-<section class="steps">
-<div class="step">
-<div class="num"><span>01</span></div>
-<div>
-<h3>Explore the New Year Offer</h3>
-<p>Check out the Tradefluenza promotion and review the discount, eligibility and offer terms.</p>
-</div>
-</div>
-
-<div class="step">
-<div class="num"><span>02</span></div>
-<div>
-<h3>Set Your Trading Goal</h3>
-<p>Decide what you want to work towards this year and choose an option that fits your experience and approach.</p>
-</div>
-</div>
-
-<div class="step">
-<div class="num"><span>03</span></div>
-<div>
-<h3>Apply Your New Year Code</h3>
-<p>Enter <strong>{{PROMO_CODE}}</strong> at checkout if required, and check that the offer is applied before payment.</p>
-</div>
-</div>
-
-<div class="step">
-<div class="num"><span>04</span></div>
-<div>
-<h3>Start with a Clear Plan</h3>
-<p>Review the rules, define your risk limits and approach your next trading challenge with discipline.</p>
-</div>
-</div>
-</section>
-
-<div class="tip">
-<b>MAKE IT A SMART START:</b> Check all fees, rules, drawdown limits and offer conditions. Set realistic goals and choose what fits your trading plan.
-</div>
-
-<section class="bottom">
-<h2>Here's to a Year of Progress</h2>
-<p>Thank you for being part of the Tradefluenza community. Wishing you focus, growth and new opportunities in the year ahead.</p>
-<a href="{{CAMPAIGN_URL}}">EXPLORE THE NEW YEAR OFFER&nbsp; →</a>
-</section>
-
-<footer class="footer">
-You're receiving this email because you signed up for Tradefluenza updates.<br>
-<a href="{{UNSUBSCRIBE_URL}}">Unsubscribe</a>
-</footer>
-
-</main>
+<body bgcolor="#FFF7F1" style="margin:0;padding:0;background-color:#FFF7F1">
+<div style="background-color:#FFF7F1;width:100%">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFF7F1" style="background-color:#FFF7F1"><tr><td align="center" bgcolor="#FFF7F1" style="background-color:#FFF7F1">
+<table role="presentation" class="wrap" width="600" cellpadding="0" cellspacing="0" border="0" bgcolor="#FFF7F1" style="width:600px;max-width:600px;background-color:#FFF7F1">
+<tr><td class="px" bgcolor="#FFF7F1" style="padding:26px 32px 18px;background-color:#FFF7F1"><a href="{{CAMPAIGN_URL}}"><img src="https://cdn.jsdelivr.net/gh/Raj2246/tfl-email-assets@f4dbe6193826b1bdf5d0b80e6a4273c43192ba36/brand/tfl-sole-256.png" width="56" alt="Tradefluenza" style="display:block;width:56px;height:auto;margin:0 auto;border:0"></a><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:10px;line-height:14px;font-weight:800;color:#5C5C66;letter-spacing:3px;text-align:center;padding-top:10px">NEW YEAR. NEW GOALS. NEW POSSIBILITIES.</div></td></tr>
+<tr><td style="padding:0;font-size:0;line-height:0"><a href="{{CAMPAIGN_URL}}"><img src="https://cdn.jsdelivr.net/gh/Raj2246/tfl-email-assets@66410e9d6297fd86c9efdd8e514a556675c47562/templates/seasonal-2026/newyear/hero.gif" width="600" alt="Happy New Year 2027 from Tradefluenza: fireworks and confetti" style="display:block;width:100%;max-width:600px;height:auto;border:0"></a></td></tr>
+<tr><td class="px" style="padding:26px 40px 0"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:900;color:#FF5E00;letter-spacing:3px;text-align:center">COUNTDOWN TO YOUR NEXT BIG MOVE</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:25px;font-weight:500;color:#5C5C66;text-align:center;padding-top:12px">A fresh year brings fresh goals. Celebrate the New Year with a special Tradefluenza offer and take your next step with purpose.</div></td></tr>
+<tr><td class="px" style="padding:24px 32px 0"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="padding:22px 16px;border-top:3px solid #FF5E00;border-bottom:3px solid #FC0402;text-align:center"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:900;color:#0E0E10;letter-spacing:3px">START THE YEAR WITH A TRADEFLUENZA BONUS</div><div class="big" style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:56px;line-height:62px;font-weight:900;color:#FF5E00;font-style:italic;letter-spacing:-1px;padding-top:6px">UP TO __% OFF</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:800;color:#5C5C66;letter-spacing:2px;padding-top:4px">A NEW YEAR SPECIAL • LIMITED TIME</div></td></tr></table></td></tr>
+<tr><td class="px" style="padding:22px 32px 0"><!--[if !mso]><!--><input type="checkbox" id="rvon-newyear" checked style="display:none;mso-hide:all"><!--<![endif]--><div class="rv-live" style="display:none;max-height:0;overflow:hidden;mso-hide:all"><!--[if !mso]><!--><input type="checkbox" id="rv-newyear" style="display:none;mso-hide:all"><!--<![endif]--><label for="rv-newyear" class="rv-cover" style="display:block;cursor:pointer;padding:22px 16px;border:2px dashed #FF5E00;border-radius:20px;background-color:#FFFFFF;text-align:center"><div class="wig" style="width:110px;height:34px;margin:4px auto 12px;border-radius:17px;background:repeating-linear-gradient(90deg,#FC0402 0 14px,#FFFFFF 14px 22px,#FF5E00 22px 36px);box-shadow:0 6px 14px rgba(255,80,0,.3)"></div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:18px;line-height:24px;font-weight:900;color:#0E0E10;letter-spacing:2px;font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif">TAP TO POP THE CRACKER</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;line-height:18px;font-weight:600;color:#5C5C66;;font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;padding-top:6px">Pop it to reveal your New Year code.</div></label><div class="rv-code" style="display:none;position:relative;padding:20px 16px;border-radius:20px;border:2px solid #FF5E00;background-color:#FFF0E6;text-align:center"><i class="cf" style="left:8%;background:#FF5E00;animation-delay:0.00s"></i><i class="cf" style="left:17%;background:#FC0402;animation-delay:0.08s"></i><i class="cf" style="left:26%;background:#FFB27A;animation-delay:0.16s"></i><i class="cf" style="left:35%;background:#FF5E00;animation-delay:0.24s"></i><i class="cf" style="left:44%;background:#FC0402;animation-delay:0.32s"></i><i class="cf" style="left:53%;background:#FFB27A;animation-delay:0.00s"></i><i class="cf" style="left:62%;background:#FF5E00;animation-delay:0.08s"></i><i class="cf" style="left:71%;background:#FC0402;animation-delay:0.16s"></i><i class="cf" style="left:80%;background:#FFB27A;animation-delay:0.24s"></i><i class="cf" style="left:89%;background:#FF5E00;animation-delay:0.32s"></i><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:900;color:#FF5E00;letter-spacing:3px;font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif">YOUR NEW YEAR CODE</div><div style="font-family:'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace;font-size:30px;line-height:40px;font-weight:700;color:#0E0E10;letter-spacing:3px;padding-top:6px">{{PROMO_CODE}}</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;line-height:18px;font-weight:600;color:#5C5C66;;padding-top:6px">Use it at checkout to get up to __% OFF.</div></div></div><div class="rv-fb" style="padding:20px 16px;border-radius:20px;border:2px dashed #FF5E00;background-color:#FFF0E6;text-align:center"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:12px;line-height:16px;font-weight:900;color:#FF5E00;letter-spacing:3px">YOUR NEW YEAR CODE</div><div style="font-family:'JetBrains Mono','SFMono-Regular',Menlo,Consolas,monospace;font-size:30px;line-height:40px;font-weight:700;color:#0E0E10;letter-spacing:3px;padding-top:6px">{{PROMO_CODE}}</div></div></td></tr>
+<tr><td class="px" style="padding:24px 32px 0"><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" bgcolor="#FF5E00" class="pulse" style="background-color:#FF5E00;background-image:linear-gradient(90deg,#FF5E00,#FC0402);border-radius:999px"><a class="hov" href="{{CAMPAIGN_URL}}" style="display:inline-block;padding:17px 34px;font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;line-height:20px;font-weight:900;color:#FFFFFF;letter-spacing:1px;text-decoration:none;border-radius:999px">CLAIM YOUR NEW YEAR OFFER&nbsp;&rarr;</a></td></tr></table><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;font-weight:600;color:#5C5C66;letter-spacing:1px;text-align:center;padding-top:12px">A NEW YEAR SPECIAL • LIMITED TIME</div></td></tr>
+<tr><td class="px" style="padding:36px 32px 0"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;font-weight:900;color:#FF5E00;letter-spacing:3px;text-align:center">YOUR FIRST MOVES OF THE YEAR</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:28px;line-height:34px;font-weight:900;color:#0E0E10;text-align:center;padding-top:6px">Make This Year Count</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;line-height:21px;font-weight:500;color:#5C5C66;text-align:center;padding:6px 0 8px">Four simple steps to make the most of the New Year offer and start with a clear plan.</div><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="56" valign="top" style="width:56px;padding:16px 0;border-bottom:1px solid #F2DCCB"><div style="width:44px;height:44px;border-radius:12px;background-color:#FF5E00;background-image:linear-gradient(90deg,#FF5E00,#FC0402);font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:44px;font-weight:900;color:#FFFFFF;text-align:center;font-style:italic">01</div></td><td valign="top" style="padding:16px 0 16px 6px;border-bottom:1px solid #F2DCCB"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:22px;font-weight:900;color:#0E0E10;">Explore the New Year Offer</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;line-height:20px;font-weight:500;color:#5C5C66;;padding-top:4px">Check out the Tradefluenza promotion and review the discount, eligibility and offer terms.</div></td></tr><tr><td width="56" valign="top" style="width:56px;padding:16px 0;border-bottom:1px solid #F2DCCB"><div style="width:44px;height:44px;border-radius:12px;background-color:#FF5E00;background-image:linear-gradient(90deg,#FF5E00,#FC0402);font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:44px;font-weight:900;color:#FFFFFF;text-align:center;font-style:italic">02</div></td><td valign="top" style="padding:16px 0 16px 6px;border-bottom:1px solid #F2DCCB"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:22px;font-weight:900;color:#0E0E10;">Set Your Trading Goal</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;line-height:20px;font-weight:500;color:#5C5C66;;padding-top:4px">Decide what you want to work towards this year and choose an option that fits your experience and approach.</div></td></tr><tr><td width="56" valign="top" style="width:56px;padding:16px 0;border-bottom:1px solid #F2DCCB"><div style="width:44px;height:44px;border-radius:12px;background-color:#FF5E00;background-image:linear-gradient(90deg,#FF5E00,#FC0402);font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:44px;font-weight:900;color:#FFFFFF;text-align:center;font-style:italic">03</div></td><td valign="top" style="padding:16px 0 16px 6px;border-bottom:1px solid #F2DCCB"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:22px;font-weight:900;color:#0E0E10;">Apply Your New Year Code</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;line-height:20px;font-weight:500;color:#5C5C66;;padding-top:4px">Enter <b style="color:#FF5E00">{{PROMO_CODE}}</b> at checkout if required, and check that the offer is applied before payment.</div></td></tr><tr><td width="56" valign="top" style="width:56px;padding:16px 0;border-bottom:1px solid #F2DCCB"><div style="width:44px;height:44px;border-radius:12px;background-color:#FF5E00;background-image:linear-gradient(90deg,#FF5E00,#FC0402);font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:44px;font-weight:900;color:#FFFFFF;text-align:center;font-style:italic">04</div></td><td valign="top" style="padding:16px 0 16px 6px;border-bottom:1px solid #F2DCCB"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:22px;font-weight:900;color:#0E0E10;">Start with a Clear Plan</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;line-height:20px;font-weight:500;color:#5C5C66;;padding-top:4px">Review the rules, define your risk limits and approach your next trading challenge with discipline.</div></td></tr></table></td></tr>
+<tr><td class="px" style="padding:22px 32px 0"><div style="padding:16px 18px;border-left:4px solid #FF5E00;border-radius:0 12px 12px 0;background-color:#FFF0E6;font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;line-height:20px;font-weight:500;color:#0E0E10;"><b style="color:#FF5E00">MAKE IT A SMART START:</b> Check all fees, rules, drawdown limits and offer conditions. Set realistic goals and choose what fits your trading plan.</div></td></tr>
+<tr><td class="px" style="padding:24px 32px 0"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center" style="padding:28px 18px;border-radius:20px;background-color:#FFFFFF;border:1px solid #F2DCCB;text-align:center"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:24px;line-height:30px;font-weight:900;color:#0E0E10;">Here's to a Year of Progress</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:14px;line-height:21px;font-weight:500;color:#5C5C66;;padding:10px 0 18px">Thank you for being part of the Tradefluenza community. Wishing you focus, growth and new opportunities in the year ahead.</div><table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td align="center" bgcolor="#FF5E00" class="" style="background-color:#FF5E00;background-image:linear-gradient(90deg,#FF5E00,#FC0402);border-radius:999px"><a class="hov" href="{{CAMPAIGN_URL}}" style="display:inline-block;padding:17px 34px;font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:15px;line-height:20px;font-weight:900;color:#FFFFFF;letter-spacing:1px;text-decoration:none;border-radius:999px">EXPLORE THE NEW YEAR OFFER&nbsp;&rarr;</a></td></tr></table></td></tr></table></td></tr>
+<tr><td class="px" style="padding:36px 32px 36px"><div style="height:1px;background-color:#F2DCCB;font-size:0;line-height:0">&nbsp;</div><img src="https://cdn.jsdelivr.net/gh/Raj2246/tfl-email-assets@f4dbe6193826b1bdf5d0b80e6a4273c43192ba36/brand/tfl-sole-256.png" width="40" alt="Tradefluenza" style="display:block;width:40px;height:auto;margin:22px auto 0;border:0"><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;line-height:18px;font-weight:900;color:#0E0E10;font-style:italic;text-align:center;padding-top:10px">Platform. Ecosystem. Community.</div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;line-height:17px;font-weight:500;color:#5C5C66;text-align:center;padding-top:12px">You are receiving this email because you subscribed to Tradefluenza updates.<br><a href="{{UNSUBSCRIBE_URL}}" style="color:#5C5C66;text-decoration:underline">Unsubscribe</a></div><div style="font-family:'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;font-size:11px;line-height:17px;font-weight:500;color:#5C5C66;text-align:center;padding-top:6px">&copy; 2026 Tradefluenza. All rights reserved.</div></td></tr>
+</table>
+</td></tr></table>
 </div>
 </body>
 </html>
-
