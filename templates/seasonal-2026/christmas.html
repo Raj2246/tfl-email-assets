@@ -1,0 +1,169 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light only">
+<meta name="supported-color-schemes" content="light only">
+<title>Tradefluenza | Christmas</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#090d0b;color:#fff;font-family:Arial,Helvetica,sans-serif}a{text-decoration:none}
+.outer{padding:22px 12px;background:#090d0b}.email{max-width:640px;margin:auto;background:#101713;border:1px solid #34463a;overflow:hidden}
+.brandbar{height:5px;background:linear-gradient(90deg,#e52c35 0 34%,#f4c542 34% 67%,#1e8b55 67%)}
+.header{padding:22px 28px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #3a5141}
+.logo{ height:2cm;
+    width:auto;
+    max-width:100%;
+    object-fit:contain;
+    display:block;}.tagline{font-size:10px;font-weight:900;letter-spacing:2px;color:#f4c542;text-align:right}
+.hero{position:relative;overflow:hidden;text-align:center;padding:45px 24px 40px;background:radial-gradient(ellipse at 50% 45%,#1b4430,#14291f 48%,#101713 85%)}
+.lights{position:absolute;top:0;left:0;right:0;height:34px;border-top:2px solid #d8c28a;border-radius:0 0 50% 50%}
+.bulb{position:absolute;top:4px;width:9px;height:13px;border-radius:50%;box-shadow:0 0 13px currentColor}
+.b1{left:7%;background:#f4c542;color:#f4c542}.b2{left:20%;background:#e52c35;color:#e52c35}.b3{left:34%;background:#55d18a;color:#55d18a}.b4{left:49%;background:#f4c542;color:#f4c542}.b5{left:64%;background:#e52c35;color:#e52c35}.b6{left:79%;background:#55d18a;color:#55d18a}.b7{left:92%;background:#f4c542;color:#f4c542}
+.snow{position:absolute;inset:22px 0 0;pointer-events:none;color:#fff;opacity:.42;font-size:17px;letter-spacing:23px;line-height:3.5}
+.tree{position:absolute;bottom:0;width:0;height:0;border-left:43px solid transparent;border-right:43px solid transparent;border-bottom:130px solid #0b2419;opacity:.9}
+.tree:before{content:"";position:absolute;left:-32px;top:38px;border-left:32px solid transparent;border-right:32px solid transparent;border-bottom:95px solid #1a5938}
+.tree:after{content:"";position:absolute;left:-5px;top:120px;width:10px;height:22px;background:#76502e}
+.tree.left{left:-25px;transform:scale(1.2)}.tree.right{right:-25px;transform:scale(1.45)}
+.gift{position:absolute;z-index:2;bottom:18px;width:43px;height:34px;border-radius:2px;box-shadow:0 5px 12px rgba(0,0,0,.3)}
+.gift:before{content:"";position:absolute;left:17px;top:0;width:8px;height:100%;background:#f4c542}
+.gift:after{content:"";position:absolute;left:12px;top:-9px;width:18px;height:10px;border:4px solid #f4c542;border-bottom:0;border-radius:12px 12px 0 0}
+.gift .lid{position:absolute;left:-4px;top:-5px;width:51px;height:8px;background:#f4c542;border-radius:2px}
+.gift.red{background:#b51f2b}.gift.red:before{background:#f4c542}.gift.red:after{border-color:#f4c542}.gift.red .lid{background:#f4c542}
+.gift.gold{background:#d6a52a;transform:scale(.78) rotate(7deg)}.gift.gold:before{background:#e52c35}.gift.gold:after{border-color:#e52c35}.gift.gold .lid{background:#e52c35}
+.gift.green{background:#1e7548;transform:scale(.68) rotate(-7deg)}.gift.green:before{background:#e52c35}.gift.green:after{border-color:#e52c35}.gift.green .lid{background:#e52c35}
+.gift.g1{left:18%;bottom:22px}.gift.g2{right:18%;bottom:24px}.gift.g3{left:30%;bottom:12px}.gift.g4{right:30%;bottom:12px}
+.kicker{position:relative;z-index:2;color:#f4c542;font-size:10px;font-weight:900;letter-spacing:3px;margin-top:10px}
+h1{position:relative;z-index:2;margin:30px auto 0;font-size:clamp(48px,10vw,78px);font-weight:1000;line-height:.88;letter-spacing:-3px;color:#fff}
+h1 span{display:block;color:#f4c542;margin-top:7px}
+.offer{position:relative;z-index:2;display:inline-block;margin:25px auto 0;padding:16px 25px;background:#e52c35;border:1px solid #ff8589;box-shadow:0 8px 24px #0006;transform:rotate(-1deg)}
+.offer small{display:block;font-size:10px;font-weight:900;letter-spacing:3px}.offer strong{display:block;margin-top:6px;font-size:clamp(32px,7vw,47px);line-height:1.08}
+.copy{position:relative;z-index:2;max-width:430px;margin:23px auto 0;color:#e1e9e2;font-size:13px;line-height:1.75}
+.cta{position:relative;z-index:2;display:inline-block;margin-top:22px;padding:15px 27px;background:#f4c542;color:#142018;font-size:12px;font-weight:1000;letter-spacing:1px;border-bottom:3px solid #b98b1c}
+.note{position:relative;z-index:2;margin-top:13px;color:#c2d0c5;font-size:10px;letter-spacing:1.5px}
+.garland{height:8px;background:repeating-linear-gradient(90deg,#e52c35 0 13px,#f4c542 13px 26px,#1e8b55 26px 39px)}
+.intro{text-align:center;padding:35px 28px 15px}.eyebrow{font-size:10px;color:#f4c542;font-weight:900;letter-spacing:3px}
+.intro h2{font-family:Georgia,serif;font-size:29px;font-weight:400;margin:10px 0;color:#fff}.intro p{font-size:13px;line-height:1.7;color:#c4d0c7;max-width:460px;margin:auto}
+.steps{padding:8px 30px 28px}.step{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid #34463a}.step:last-child{border:0}
+.num{flex:0 0 42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#1d3828;border:1px solid #f4c542;color:#f4c542;font-weight:1000}
+.step h3{font-size:15px;margin:2px 0 6px}.step p{font-size:12px;line-height:1.7;color:#c4d0c7;margin:0}.step strong{color:#f4c542}
+.tip{margin:0 30px 28px;padding:17px 19px;background:#1a2b20;border-left:3px solid #e52c35;color:#d5dfd7;font-size:11px;line-height:1.7}.tip b{color:#f4c542}
+.bottom{text-align:center;padding:29px 24px;background:linear-gradient(135deg,#182b20,#1d2020);border-top:1px solid #3a5141}
+.bottom h2{font-family:Georgia,serif;font-size:25px;font-weight:400;color:#f4c542;margin:0}.bottom p{font-size:12px;line-height:1.7;color:#c4d0c7;max-width:420px;margin:10px auto 0}
+.bottom a{display:inline-block;margin-top:18px;background:#e52c35;color:#fff;padding:14px 23px;font-size:11px;font-weight:900;letter-spacing:1px}
+.footer{text-align:center;padding:21px 18px;border-top:1px solid #34463a;color:#89988e;font-size:10px;line-height:1.8}.footer a{color:#f4c542;text-decoration:underline}
+@media(max-width:480px){.gift{transform:scale(.72)}.gift.g2{transform:scale(.58) rotate(7deg)}.gift.g3{transform:scale(.5) rotate(-7deg)}.gift.g4{transform:scale(.58)}.outer{padding:0}.header{padding:18px 16px}.logo{width:145px}.tagline{font-size:8px}.hero{padding:38px 16px 34px}.steps{padding:6px 20px 24px}.intro{padding:30px 20px 14px}.tip{margin:0 20px 24px}}
+
+/* ===== Light theme (TFL brand rule: never dark) ===== */
+:root{color-scheme:light only}
+body{background:#F5FAF6;color:#0E0E10}
+.outer{background:#F5FAF6}
+.email{background:#FFFFFF;border-color:#DDEBE1}
+.header{border-bottom-color:#DDEBE1}
+.logo{height:56px}
+.tagline{color:#A87400}
+.hero{background:radial-gradient(ellipse at 50% 45%,#E3F3E8,#F2FAF4 48%,#FFFFFF 85%)}
+.snow{color:#9CC8AC}
+.kicker{color:#A87400}
+h1{color:#0E0E10} h1 span{color:#C08A12}
+.offer{color:#FFFFFF;box-shadow:0 8px 24px rgba(229,44,53,.25)}
+.copy{color:#3F4A43} .note{color:#5C6B61}
+.eyebrow{color:#A87400} .intro h2{color:#0E0E10} .intro p{color:#55635A}
+.step{border-bottom-color:#E3EDE6}
+.num{background:#FFF7DD;border-color:#D6A52A;color:#9A6B00}
+.step p{color:#55635A} .step strong{color:#A87400}
+.tip{background:#F2FAF4;color:#3F4A43} .tip b{color:#A87400}
+.bottom{background:linear-gradient(135deg,#EAF6EE,#FFFFFF);border-top-color:#DDEBE1}
+.bottom h2{color:#1E7548} .bottom p{color:#55635A}
+.footer{border-top-color:#DDEBE1;color:#7A867E} .footer a{color:#e52c35}
+</style>
+</head>
+<body>
+<div class="outer">
+<main class="email">
+<div class="brandbar"></div>
+<header class="header">
+<img class="logo" src="https://cdn.jsdelivr.net/gh/Raj2246/tfl-email-assets@f4dbe6193826b1bdf5d0b80e6a4273c43192ba36/brand/tfl-sole-256.png" alt="Tradefluenza">
+<div class="tagline">SEASON'S GREETINGS<br>FROM TRADEFLUENZA</div>
+</header>
+
+<section class="hero">
+<div class="lights">
+<i class="bulb b1"></i><i class="bulb b2"></i><i class="bulb b3"></i><i class="bulb b4"></i><i class="bulb b5"></i><i class="bulb b6"></i><i class="bulb b7"></i>
+</div>
+<div class="snow">✦　·　❄　　✧　·　❄　✦　　·　❄</div>
+<div class="tree left"></div><div class="tree right"></div>
+<div class="gift red g1"><span class="lid"></span></div>
+<div class="gift gold g2"><span class="lid"></span></div>
+<div class="gift green g3"><span class="lid"></span></div>
+<div class="gift red g4"><span class="lid"></span></div>
+
+<div class="kicker">A LITTLE CHRISTMAS MAGIC. A BIG TRADING OFFER.</div>
+<h1>MERRY<span>CHRISTMAS</span></h1>
+<div class="offer">
+<small>UNWRAP YOUR CHRISTMAS GIFT</small>
+<strong>UP TO __% OFF</strong>
+</div>
+<p class="copy">Celebrate the season with a special Tradefluenza offer. Make room for new goals, fresh opportunities and your next trading milestone.</p>
+<a class="cta" href="{{CAMPAIGN_URL}}">UNWRAP THE OFFER&nbsp; →</a>
+<div class="note">A FESTIVE OFFER FOR A LIMITED TIME</div>
+</section>
+
+<div class="garland"></div>
+
+<section class="intro">
+<div class="eyebrow">YOUR FESTIVE GAME PLAN</div>
+<h2>Four Steps to Get Started</h2>
+<p>Here's how to make the most of your Christmas offer and prepare for the year ahead.</p>
+</section>
+
+<section class="steps">
+<div class="step">
+<div class="num">01</div>
+<div>
+<h3>Discover Your Christmas Offer</h3>
+<p>Explore the Tradefluenza festive promotion and check the offer details, eligibility and terms.</p>
+</div>
+</div>
+<div class="step">
+<div class="num">02</div>
+<div>
+<h3>Choose What Fits Your Goals</h3>
+<p>Review the available options and choose what aligns with your trading experience, goals and preferred conditions.</p>
+</div>
+</div>
+<div class="step">
+<div class="num">03</div>
+<div>
+<h3>Apply Your Christmas Code</h3>
+<p>Enter <strong>{{PROMO_CODE}}</strong> at checkout if required, then confirm the offer is applied before completing your purchase.</p>
+</div>
+</div>
+<div class="step">
+<div class="num">04</div>
+<div>
+<h3>Get Ready for Your Next Move</h3>
+<p>Read the rules, plan your approach and head into your next trading challenge with focus and discipline.</p>
+</div>
+</div>
+</section>
+
+<div class="tip">
+<b>A FESTIVE REMINDER:</b> Take a moment to review all fees, trading rules, drawdown limits and offer terms. Choose what genuinely suits your approach.
+</div>
+
+<section class="bottom">
+<h2>Wishing You a Season of Possibilities</h2>
+<p>Thank you for being part of the Tradefluenza community. Here's to fresh goals and new opportunities ahead.</p>
+<a href="{{CAMPAIGN_URL}}">EXPLORE THE CHRISTMAS OFFER&nbsp; →</a>
+</section>
+
+<footer class="footer">
+You're receiving this email because you signed up for Tradefluenza updates.<br>
+<a href="{{UNSUBSCRIBE_URL}}">Unsubscribe</a>
+</footer>
+</main>
+</div>
+</body>
+</html>
